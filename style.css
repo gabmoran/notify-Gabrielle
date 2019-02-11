@@ -1,0 +1,320 @@
+body{
+    margin:0;
+}
+
+#main{
+    display: grid;
+    grid-template-areas:'div'
+                         'header'
+                         'nav'
+                         'section'
+                         'aside'
+                         'footer';
+    grid-auto-rows: 1vw 37vw 30vw 25vw 35vw 7vw;
+}
+
+div{
+    grid: div;
+}
+
+div #linhaVerde{
+    grid: div;
+    width: 100vw;
+    height: auto;
+    background-color: rgb(50, 202, 100);
+}
+
+header{
+    grid: header;
+    background-image: url('./imagem/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+}
+
+#main > header > ul > li:nth-child(3) > a{
+    margin-right: 20px;
+}
+
+#main > header > ul:nth-child(1) > li:nth-child(1) > h1{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 35pt;
+}
+
+#main > header > ul:nth-child(1) > li:nth-child(1) > h1> span{
+    font-family: 'Pacifico', cursive;
+    color: rgb(50, 202, 100);
+    font-size: 30pt;
+}
+
+#main > header > ul > li:nth-child(2){
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 15pt;     
+}
+#main > header > ul > li:nth-child(2) > p:nth-child(1){
+    margin-bottom: 5px;
+}
+
+#main > header > ul > li:nth-child(2) > p:nth-child(2){
+    margin-top: 0;
+}
+
+#main > header > ul > li:nth-child(3){
+    display: flex;
+    align-items: flex-start;
+}
+
+#main > header > ul{
+    list-style: none;
+}
+
+
+header a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+    cursor: pointer;
+}
+
+header a:hover{
+    background-color: rgb(50, 202, 100);
+}
+
+
+#main > header > #mao{
+    width: 25vw;
+    align-self: flex-end;
+    padding-left: 200px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+nav{
+    grid: nav;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px;
+}
+
+nav a{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(50, 202, 100);
+    border-radius: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+nav p{
+    text-align: center;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+
+#main > nav > div > p:nth-child(2){
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+
+#main > nav > div > p:nth-child(3){
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 13pt;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    grid: section;
+    background-color: rgb(238, 236, 236);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section div{
+    margin: 160px;
+    margin-top: 70px;
+}
+
+section iframe{
+    margin-right: 150px;
+    width: 30vw;
+    height: 40vh;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+
+section > div > h1{
+    font-weight: bold;
+    font-size: 17pt;
+}
+
+section > div > p{
+    color: gray;
+    margin: 5px;
+}
+
+section input{
+    border: none;
+    width: 250px;
+    height: 5vh;
+    cursor: pointer;
+    font-size: 12pt;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    color: gray;
+    padding-left: 20px;
+    border-left: 20px;
+}
+
+section div p:nth-child(5){
+    margin-bottom: 25px;
+}
+
+section button{
+    background-color: rgb(50, 202, 100);
+    color: white;
+    width: 100px;
+    height: 5vh;
+    border: none;
+    cursor: pointer;
+    font-size: 12pt;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+aside{
+    grid: aside;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+aside > p:nth-child(1){
+    color: gray;
+    font-style: italic;
+    padding-left: 200px;
+    padding-right: 200px;  
+}
+
+aside > p:nth-child(2){
+    font-weight: bold;
+}
+
+aside > p:nth-child(4){
+    font-weight: bold;
+}
+
+aside > p:nth-child(5){
+    color: gray;
+}
+
+aside div img{
+    width: 35px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+aside div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+aside p:nth-child(4){
+    margin-top: 60px;
+}
+
+
+aside li{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+
+aside ul{
+    display: flex;
+    flex-direction: row;
+}
+aside ul li a{
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+aside ul li a:hover{
+    background-color: rgb(50, 202, 100);
+}
+
+
+footer{
+    grid: footer;
+    background-color: rgb(238, 236, 236);
+}
+
+footer div{
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 40px; 
+}
+
+footer div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer div ul a{
+    text-decoration: none;
+    color: gray;
+}
+
+
+#main > header > ul > li:nth-child(3) > div:hover{
+    background-color: rgb(50, 202, 100);
+}
+
+aside div img:hover{
+    background-color: rgb(50, 202, 100);
+}
+
+
